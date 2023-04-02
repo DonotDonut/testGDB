@@ -28,6 +28,7 @@ void printFun(int test)
 // https://www.geeksforgeeks.org/introduction-to-recursion-data-structure-and-algorithm-tutorials/
 
 int main() {
+  
   cout << factorial(10) << endl;
 
   int test = 3;
@@ -42,10 +43,3 @@ int main() {
   return 0;
 }
 
-// original code, fibonacci method was not defined 
-int fibonacci(int n) {
-  if (n < 3) {
-    return 1;
-  }
-  return fibonacci(n - 2) + fibonacci(n - 1);
-}
