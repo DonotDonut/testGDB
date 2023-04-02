@@ -18,12 +18,11 @@ int factorial(int n) {
 void printFun(int test)
 {
     if (test < 1) {
-        return 1;
+        cout << "Test is less than 1" << endl;
     } else {
         cout << test << " ";
         printFun(test - 1); // statement 2
         cout << test << " ";
-        return;
     }
 }
 // Printfun Method from 
