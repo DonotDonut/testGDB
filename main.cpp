@@ -14,7 +14,6 @@ int factorial(int n) {
   return n * factorial(n - 1);
 }
 
-// orignal: void printFun(int test), need to convert void to int to prevent no opperator error in line 35
 void printFun(int test)
 {
     if (test < 1) {
