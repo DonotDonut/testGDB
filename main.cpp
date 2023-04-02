@@ -14,11 +14,40 @@ int factorial(int n) {
   return n * factorial(n - 1);
 }
 
+// orignal: void printFun(int test), need to convert void to int to prevent no opperator error in line 35
+void printFun(int test)
+{
+    if (test < 1) {
+        return 1;
+    } else {
+        cout << test << " ";
+        printFun(test - 1); // statement 2
+        cout << test << " ";
+        return;
+    }
+}
+// Printfun Method from 
+// https://www.geeksforgeeks.org/introduction-to-recursion-data-structure-and-algorithm-tutorials/
+
 int main() {
   cout << factorial(10) << endl;
+
+  int test = 3;
+  printFun(test); 
+  cout << " " << endl; 
 
   for (int i = 1; i < 10; i++) {
     cout << "fibonacci i: " << i << " == " << fibonacci(i) << endl;
   }
+
+  
   return 0;
+}
+
+// original code, fibonacci method was not defined 
+int fibonacci(int n) {
+  if (n < 3) {
+    return 1;
+  }
+  return fibonacci(n - 2) + fibonacci(n - 1);
 }
